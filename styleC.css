@@ -1,0 +1,80 @@
+﻿    @font-face {
+    font-family: 'SEGA';
+    src: URL('segaFNT/SEGA.ttf') format('ttf');
+    }
+
+    @font-face {
+    font-family: 'Open Sans',sans-serif;
+    src: URL('"Open_Sans"/Open_SansBold') format('ttf');
+    }
+
+    h1 {
+        display: block;
+    }
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        display: block;
+        width: 100%;
+        margin-right: 10%;
+        
+    }
+
+    a{
+        color:blue;
+    }
+
+    a:hover{
+        color: rebeccapurple
+    }
+
+    a:visited{
+        color: greenyellow;
+    }
+
+    a:active{
+        color: blue;
+    }
+
+    nav,article{
+        float: left;
+        width: 35%;
+        border: 10px solid white;
+        background-color: dodgerblue;
+        margin-right: 10%
+        
+    }
+
+    #myAside {
+        z-index: 1;
+        float: left;
+        width: 35%;
+        padding: 5%;
+        border: 10px solid white;
+        background-color: dodgerblue;
+    }
+
+    #mySection{
+        float: right;
+        border: 0px;
+        margin: 0px;
+        padding: 10px;
+        width: 40%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    footer{
+        padding-top: 10%;
+        border-top: 10px;
+        margin-top: 10%;
+        font-size: 8px;
+    }
+
+    #license {
+        clear: both;
+        display: block;
+        width: 100%;
+    }
