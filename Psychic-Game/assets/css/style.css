@@ -11,6 +11,15 @@
         
     }
 
+    nav{
+        float: left;
+        width: 35%;
+        border: 10px solid white;
+        background-color: dodgerblue;
+        margin-right: 10%
+        
+    }
+
     #masthead {
     position: fixed;
     z-index: 99;
@@ -30,3 +39,4 @@ float: right;
     /* Visual */
     border-bottom: 2px solid #ccc;
   }
+
