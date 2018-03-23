@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Totally Trivial Trivia!</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+
+    <link href ="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">Totally Trivial Trivia!</h1>
+</div>
+
+<header id="masthead">
+    <div class="container">
+        <h1>James Erickson</h1>
+      <nav>
+        <ul>
+          <li><a href="../Responsive-Portfolio/myIndex.html">About</a></li>
+          <li><a href="../Responsive-Portfolio/myPortfolio.html">Portfolio</a></li>
+          <li><a href="../Responsive-Portfolio/myContact.html">Contact</a></li>
+          <li><a href="">Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="container">
+
+
+    <br></br>
+    <h3 id = "headerID">
+        Time Remaining: 30 Seconds
+    </h3>
+    <br></br>
+    <h6>
+        What was the first full length CGI movie?
+    </h6>
+    <form id = "movies">
+        <input type="radio" class="bugLife" > A Bug's Life<br>
+        <input type="radio" class = "monster"> Monsters Inc.<br>
+        <input type="radio" class = "toyStory"> Toy Story<br>
+        <input type="radio" class ="lionKing"> The Lion King  
+    </form>
+    <br></br>
+    <h6>
+        Which of these is NOT a name of one of the Spice Girls?
+    </h6>
+    <form id = "music">
+        <input type="radio" class="scary" > Scary Spice<br>
+        <input type="radio" class="fred"> Fred Spice<br>
+        <input type="radio" class="sweaty"> Sweaty Spice<br>
+        <input type="radio" class="posh"> Posh Spice 
+    </form>
+    <br></br>
+    <h6>
+        Which NBA team won the most titles in the 90's
+    </h6>
+    <form id = "sports">
+        <input type="radio" class="knicks" > New York Knicks <br>
+        <input type="radio" class="trailblazers"> Portland Trailblazers <br>
+        <input type="radio" class="lakers"> Los Angeles Lakers <br>
+        <input type="radio" class="bulls"> Chicago Bulls 
+    </form>
+
+    <aside>
+        <p id = "winP">
+            Correct Answers: 
+        </p>
+        <p id = "lossP">
+            Wrong Answers: 
+        </p>
+    </aside>
+
+    <br>
+    <button type="button" class="btn btn-primary" id = "submitButton">Submit!</button>
+
+</div>
+
+
+
+<script src = "assets/javascript/app.js">
+</script>
+
+</body>
+</html>
