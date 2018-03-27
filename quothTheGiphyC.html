@@ -6,6 +6,21 @@
 </head>
 
 <body>
+  
+  <header id="masthead">
+    <div class="container">
+        <h1>James Erickson</h1>
+      <nav>
+        <ul>
+          <li><a href="../Responsive-Portfolio/myIndex.html">About</a></li>
+          <li><a href="../Responsive-Portfolio/myPortfolio.html">Portfolio</a></li>
+          <li><a href="../Responsive-Portfolio/myContact.html">Contact</a></li>
+          <li><a href="">Giphy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <div id="buttons">
 
   </div>
@@ -16,7 +31,7 @@
   <script src="./quothTheGiphy_files/jquery.min.js"></script>
   
   <script type="text/javascript">
-    $("body #gifs-appear-here .item .gif").on("click", function() {
+    $("body").on("click", ".gif", function() {
       // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
       var state = $(this).attr("data-state");
       // If the clicked image's state is still, update its src attribute to what its data-animate value is.
@@ -36,7 +51,7 @@
 
     var gifDivList = [];
     var buttonPressed = false;
-    var topic = ["Cats","Dogs","Shakira","Snoopy","Germany","China","Japan"];
+    var topic = ["Cats","Dogs","Shakira","Snoopy","Germany","China","Japan"]
 
     for (i=0;i<topic.length;i++)
     {
@@ -72,7 +87,7 @@
 
             var personImage = $("<img>");
             personImage.attr("src", results[i].images.fixed_height.url);
-            personImage.attr("data-state","animate");
+            personImage.attr("data-state","still");
             personImage.attr("class","gif");
             personImage.attr("data-still", "https://upload.wikimedia.org/wikipedia/en/5/53/Snoopy_Peanuts.png");
             personImage.attr("data-animate", personImage.attr("src"));
