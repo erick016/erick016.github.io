@@ -29,10 +29,10 @@ var createRow = function(data) {
     var tRow = $("<tr>");
     
 
-    var trainNameTd = $("#train-name-input").text(data.trainName || trainName);
-    var destNameTd = $("#destination-input").text(data.destName || destName);
-    var firstTrainTimeTd = $("#first-train-to-dest-input").text(data.firstTrainTime || firstTrainTime);
-    var timetableDeltaTd = $("#frequency-input").text(data.timetableDelta || timetableDelta);
+    var trainNameTd = $("#train-name-input").text(data.trainNameDB || trainName);
+    var destNameTd = $("#destination-input").text(data.destNameDB || destName);
+    var firstTrainTimeTd = $("#first-train-to-dest-input").text(data.firstTrainTimeDB || firstTrainTime);
+    var timetableDeltaTd = $("#frequency-input").text(data.timetableDeltaDB || timetableDelta);
 
     var myDuration = moment.duration(parseInt(timetableDeltaTd), 'minutes');
     var firstTrainTimeS= moment.duration(parseInt(firstTrainTime).asSeconds());
@@ -46,7 +46,7 @@ var createRow = function(data) {
 
     var arrivalTimeTd = $("arrival-time").text(arrivalTime24HrStr);
    
-    tRow.append(trainNameTd, destNameTd, firstTrainNameTd, timetableDeltaTd, arrivalTimeTd);
+    tRow.append(trainNameTd, destNameTd, firstTrainTimeTd, timetableDeltaTd, arrivalTimeTd);
     
     tBody.append(tRow);
   };
