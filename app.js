@@ -10,10 +10,10 @@ var timetableDelta = "";
 
 $("#submit").on("click", function(event){
     event.preventDefault();
-    trainName = $("#train-name").val().trim();
-    destName = $("#destination").val().trim();
-    firstTrainTime = $("#first-train-to-dest").val().trim();
-    timetableDelta = $("#frequency").val().trim();
+    trainName = $("#train-name-input").val().trim();
+    destName = $("#destination-input").val().trim();
+    firstTrainTime = $("#first-train-to-dest-input").val().trim();
+    timetableDelta = $("#frequency-input").val().trim();
     database.ref().push({
         trainNameDB: trainName,
         destNameDB: destName,
@@ -29,10 +29,10 @@ var createRow = function(data) {
     var tRow = $("<tr>");
     
 
-    var trainNameTd = $("#train-name").text(data.trainName || trainName);
-    var destNameTd = $("#destination").text(data.destName || destName);
-    var firstTrainTimeTd = $("#first-train-to-dest").text(data.firstTrainTime || firstTrainTime);
-    var timetableDeltaTd = $("#frequency").text(data.timetableDelta || timetableDelta);
+    var trainNameTd = $("#train-name-input").text(data.trainName || trainName);
+    var destNameTd = $("#destination-input").text(data.destName || destName);
+    var firstTrainTimeTd = $("#first-train-to-dest-input").text(data.firstTrainTime || firstTrainTime);
+    var timetableDeltaTd = $("#frequency-input").text(data.timetableDelta || timetableDelta);
 
     var myDuration = moment.duration(parseInt(timetableDeltaTd), 'minutes');
     var firstTrainTimeS= moment.duration(parseInt(firstTrainTime).asSeconds());
